@@ -1,0 +1,22 @@
+{
+  "name": "nivra-backend",
+  "version": "1.0.0",
+  "description": "NIVRA Task Tracker — Node.js/Express backend with Google OAuth and Sheets storage",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "googleapis": "^140.0.0",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

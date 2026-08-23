@@ -1,0 +1,10 @@
+# Dependencies — never commit these
+node_modules/
+
+# Environment variables — contains secrets like Client Secret and service account key
+# This is the most important file to NEVER commit
+.env
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
