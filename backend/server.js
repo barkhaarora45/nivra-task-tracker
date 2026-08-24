@@ -57,6 +57,10 @@ app.use(session({
     // secure: true means the cookie is only sent over HTTPS.
     // We allow non-HTTPS in development (localhost doesn't have HTTPS by default).
 
+    // Add this new line below:
+    sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
+
+
     httpOnly: true,
     // httpOnly: true means JavaScript in the browser CANNOT read this cookie.
     // This protects against XSS attacks (malicious scripts stealing the session).
